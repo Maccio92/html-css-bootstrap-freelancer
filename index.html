@@ -10,11 +10,21 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid">
-            <div class="row my_height"></div>
+        <div class="container header">
+            <div class="row">
+                <div class="col-8 bg_menu_left">lorem</div>
+                <div class="col-4 bg_menu_right">
+                    <div class="row text_center">
+                        <div class="col ham"><i class="fas fa-bars"></i></div>
+                        <div class="col menu">menu</div>
+                        <div class="col menu">menu</div>
+                        <div class="col menu">menu</div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Jumbotron -->
-        <div class="container-fluid">
+        <div class="container">
             <div class="row my_height_jumbo justify-content-center align-items-center">
                 <div class="col-6 bg_jumbo"></div>
         </div>
@@ -22,30 +32,28 @@
 
     <main>
         <div class="container-fluid my_portfolio">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-8">
-                    <div class="row justify-content-between row_folio">
-                        <h2>Portfolio</h2>
-                        <div class="col-3 bg_portfolio"></div>
-                        <div class="col-3 bg_portfolio"></div>
-                        <div class="col-3 bg_portfolio"></div>
-                    </div>
-                    <div class="row justify-content-between row_folio">
-                        <div class="col-3 bg_portfolio"></div>
-                        <div class="col-3 bg_portfolio"></div>
-                        <div class="col-3 bg_portfolio"></div>
+            <div class="row justify-content-center" >
+                <div class="col-xs-12 col-sm-10 col-md-10 col-lg-8">
+                    <h2 style="text-align: center;">Portfolio</h2>
+                        <div class="row row-cols-xs-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
+                          <div class=" bg_portfolio col"></div>
+                          <div class=" bg_portfolio col"></div>
+                          <div class=" bg_portfolio col"></div>
+                          <div class=" bg_portfolio col"></div>
+                          <div class=" bg_portfolio col"></div>
+                          <div class=" bg_portfolio col"></div>                         
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
         <div class="container-fluid ">
-            <div class="row my_height_about justify-content-center align-items-center row_folio">
-                <div class="col-8">
-                    <div class="row justify-content-around align-items-center gx-5">
-                        <h2>About</h2>
-                        <div class="col-5 bg_about"></div>
-                        <div class="col-5 bg_about"></div>
+            <div class="row my_height_about justify-content-center align-items-center ">
+                <div class="col-xs-12 col-md-6">
+                    <h2 style="text-align: center;">About</h2>
+                    <div class="row row-cols-xs-1 row-cols-sm-2 g-5">
+                        <div class="col bg_about"></div>
+                        <div class="col bg_about"></div>
                         
                     </div>
                 </div>
@@ -61,6 +69,16 @@
                 </div>
             </div>
         </div>
+        <div class="container px-4">
+            <div class="row gx-5">
+              <div class="col">
+               <div class="p-3 border bg-light">Custom column padding</div>
+              </div>
+              <div class="col">
+                <div class="p-3 border bg-light">Custom column padding</div>
+              </div>
+            </div>
+          </div>
     </main>
     <footer>
         <div class="container-fluid">

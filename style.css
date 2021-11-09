@@ -5,11 +5,30 @@
     --bg4: white;
 }
 
-
 header{
     width: 100%;
+    height: 80px;
     background-color: var(--bg1);
 }
+.header,
+.header .row{
+    height: 100%;
+    align-content: center;
+}
+.bg_menu_left{
+    background-color: var(--bg3);
+}
+.bg_menu_right{
+    background-color: var(--bg2);
+}
+.text_center{
+    text-align: center;
+}
+
+.ham{
+    display: none;
+}
+
 .my_height{
     height: 50px;
     color: white;
@@ -25,15 +44,15 @@ header{
 .my_portfolio{
     margin: 50px 0;
 }
-.row_folio{
-    height: 250px;
-    text-align: center;
+.row_margin{
+   margin-top: 20px;
 }
 .bg_portfolio{
     height: 150px;
     background-color:var(--bg1);
 }
 .my_height_about{
+    height: 150px;
     background-color: var(--bg2);
 }
 .bg_about{
