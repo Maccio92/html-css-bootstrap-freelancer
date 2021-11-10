@@ -1,89 +1,66 @@
 :root{
-    --bg1: #2c3e50;
-    --bg2: #1abc9c;
+    --dark-grey: #2c3e50;
+    --green: #1abc9c;
     --bg3: aqua;
-    --bg4: white;
+    --white: white;
 }
-
-header{
+body{
+    font-family:'Montserrat', sans-serif;
+    color: var(--white);
+}
+.header{
+    background-color: var(--dark-grey);
+    line-height: 4em;
+}
+.logo{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.menu a{
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.jumbotron{
+    background-color: var(--green);
+}
+.avatar{
+    display: inline-block;
+    width: 300px;
+}
+h2{
+    font-size: 3em;
+    font-weight: 800;
+}
+h3{
+    font-size: 1.3em;
+}
+.fa-star{
+    font-size: 2em;
+}
+.fa-star::after{
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 150px;
+    background-color: var(--white);
+}
+.fa-star::before{
+    content: "";
+    display: inline-block;
+    height: 5px;
+    width: 150px;
+    background-color: var(--white);
+}
+.portfolio .img{
+    background-color: var(--green);
     width: 100%;
-    height: 80px;
-    background-color: var(--bg1);
+    border-radius: 30px;
 }
-.header,
-.header .row{
-    height: 100%;
-    align-content: center;
+.img img{
+    width: 100%;
 }
-.bg_menu_left{
-    background-color: var(--bg3);
-}
-.bg_menu_right{
-    background-color: var(--bg2);
-}
-.text_center{
-    text-align: center;
+.about{
+    background-color: var(--dark-grey);
 }
 
-.ham{
-    display: none;
-}
-
-.my_height{
-    height: 50px;
-    color: white;
-}
-.my_height_jumbo{
-    height: 400px;
-    background-color:var(--bg2);
-}
-.bg_jumbo{
-    background-color: var(--bg3);
-    height: 300px;
-}
-.my_portfolio{
-    margin: 50px 0;
-}
-.row_margin{
-   margin-top: 20px;
-}
-.bg_portfolio{
-    height: 150px;
-    background-color:var(--bg1);
-}
-.my_height_about{
-    height: 150px;
-    background-color: var(--bg2);
-}
-.bg_about{
-    background-color: var(--bg3);
-    height: 70px;
-}
-.col-12{
-    height: 150px;
-    background-color: var(--bg1);
-}
-.message_height{
-    height: 80px;
-}
-button{
-    background-color: var(--bg3);
-    border: none;
-    margin-top: 1em;
-}
-.footer_row{
-    height: 150px;
-    background-color: var(--bg1);
-}
-.footer_col{
-    background-color: var(--bg3);
-    height: 100px;
-}
-.footer_copyright{
-    height: 90px;
-    
-}
-.footer_copy{
-    height: 90px;
-    background-color: lightgray;
-}
