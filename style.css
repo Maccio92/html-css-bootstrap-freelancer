@@ -1,7 +1,7 @@
 :root{
     --dark-grey: #2c3e50;
     --green: #1abc9c;
-    --bg3: aqua;
+    --grey: #425971;
     --white: white;
 }
 body{
@@ -29,7 +29,7 @@ body{
     width: 300px;
 }
 h2{
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 800;
 }
 h3{
@@ -38,14 +38,10 @@ h3{
 .fa-star{
     font-size: 2em;
 }
-.fa-star::after{
-    content: "";
-    display: inline-block;
-    height: 5px;
-    width: 150px;
-    background-color: var(--white);
+.star{
+    display: flex;
 }
-.fa-star::before{
+.line{
     content: "";
     display: inline-block;
     height: 5px;
@@ -61,6 +57,69 @@ h3{
     width: 100%;
 }
 .about{
-    background-color: var(--dark-grey);
+    background-color: var(--green);
+}
+.download{
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--white);
+}
+.fa-download{
+    color: var(--white);
+}
+.black {
+    color: black;
+}
+.white{
+    color: var(--white);
+}
+.bg-black{
+    background-color: black;
+}
+label{
+    font-weight: 500;
+}
+.form-control{
+    border: none;
+    border-bottom: 1px solid grey;
+    border-radius: 0;
+}
+.form-control:focus{
+    box-shadow: 2px  rgba(22, 193, 255, 0.807);
+    border-bottom: none;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.form-control:focus .form-label{
+    font-size: 0.8em;
+}
+.green-button{
+    background-color: var(--green);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
 }
 
+.footer-top{
+    background-color: var(--grey);
+}
+.footer-bottom{
+    background-color: var(--dark-grey);
+}
+.round{
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    width: 40px;
+    height:40px;
+    display: inline-block;
+    position: relative;
+}
+.round i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
